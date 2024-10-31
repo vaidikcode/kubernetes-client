@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
  *      "https://kubernetes.io/docs/tasks/extend-kubernetes/custom-resources/custom-resource-definitions/#field-selectors">Kubernetes
  *      Docs - Field Selectors</a>
  */
+@Target({ ElementType.FIELD, ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
-@Target({ElementType.FIELD,ElementType.METHOD})
 public @interface SelectableField {
 }
